@@ -1,0 +1,38 @@
+
+CREATE TABLE IF NOT EXISTS `ae_municipio` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `dataReferencia` date DEFAULT NULL,
+  `codigoIBGE` int(11) DEFAULT NULL,
+  `nomeIBGE` varchar(255) DEFAULT NULL,
+  `codigoRegiao` int(11) DEFAULT NULL,
+  `nomeRegiao` varchar(255) DEFAULT NULL,
+  `pais` varchar(255) DEFAULT NULL,
+  `uf_sigla` varchar(255) DEFAULT NULL,
+  `uf_nome` varchar(255) DEFAULT NULL,
+  `tipo_id` int(11) DEFAULT NULL,
+  `tipo_descricao` varchar(255) DEFAULT NULL,
+  `tipo_descricao_detalhada` text,
+  `valor` int(11) DEFAULT NULL,
+  `quantidade_beneficiados` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE IF NOT EXISTS `bpc_municipio` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `dataReferencia` date DEFAULT NULL,
+  `codigoIBGE` int(11) DEFAULT NULL,
+  `nomeIBGE` varchar(255) DEFAULT NULL,
+  `codigoRegiao` int(11) DEFAULT NULL,
+  `nomeRegiao` varchar(255) DEFAULT NULL,
+  `pais` varchar(255) DEFAULT NULL,
+  `uf_sigla` varchar(255) DEFAULT NULL,
+  `uf_nome` varchar(255) DEFAULT NULL,
+  `tipo_id` int(11) DEFAULT NULL,
+  `tipo_descricao` varchar(255) DEFAULT NULL,
+  `tipo_descricao_detalhada` text,
+  `valor` int(11) DEFAULT NULL,
+  `quantidade_beneficiados` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
